@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caesar Cipher</title>
+</head>
+<body>
+    <h1>Caesar Cipher</h1>
+    <form method="post" action="/">
+        <textarea name="text" rows="4" cols="50" required></textarea>
+
+        <br>
+
+        <label for="shift">Shift:</label>
+        <input type="number" id="shift" name="shift" value="3" min="1" max="25" required>
+        
+        <br>
+        
+        <legend>Choose one:</legend>
+
+        <div>
+            <input type="radio", id="encrypt" name="action" value="encrypt" checked>
+            <label for="encrypt">Encrypt</label>
+        </div>
+        
+        <div>
+            <input type="radio", id="decrypt" name="action" value="decrypt">
+            <label for="decrypt">Decrypt</label>   
+        </div>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
